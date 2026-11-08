@@ -1,0 +1,1366 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>每日大赛主题大赛骑乘-骑乘大赛每日更新_骑乘主题大赛怎么参加_和同类赛事比哪个好</title>
+  <meta name="description" content="每日大赛主题大赛骑乘是聚焦骑乘类主题赛事的内容门户，提供每日大赛主题大赛骑乘的赛程看点、参赛作品推荐、分类筛选与深度解析，适合关注骑乘赛事和每日更新的观众与创作者浏览参考。">
+  <meta name="keywords" content="骑乘赛事,主题大赛,每日更新,参赛作品,骑乘类比赛">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231f5f4a'/%3E%3Cpath d='M20 70 Q35 25 50 70 Q65 25 80 70' stroke='%23f2c94c' stroke-width='8' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+  <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+  <style>
+    :root {
+      --green-deep: #1f5f4a;
+      --green-mid: #2e7d5e;
+      --green-soft: #e8f3ee;
+      --gold: #c99a2e;
+      --gold-soft: #fbf3df;
+      --ink: #1b2a24;
+      --ink-soft: #3d4f47;
+      --muted: #6b7f76;
+      --line: #d7e2dc;
+      --bg: #f6f9f7;
+      --panel: #ffffff;
+      --radius: 14px;
+      --radius-sm: 9px;
+      --shadow: 0 8px 24px rgba(27, 42, 36, 0.07);
+      --shadow-sm: 0 2px 8px rgba(27, 42, 36, 0.05);
+      --font: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", system-ui, sans-serif;
+      --header-h: 104px;
+      --announce-h: 38px;
+      --sticky-offset: 142px;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: var(--sticky-offset); }
+    body {
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.7;
+      font-size: 15px;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+    button { font-family: inherit; cursor: pointer; }
+    img, svg { display: block; max-width: 100%; }
+
+    /* 吸顶公告条 + 页头 */
+    .announce-bar {
+      position: sticky;
+      top: 0;
+      z-index: 60;
+      height: var(--announce-h);
+      background: linear-gradient(90deg, #1f5f4a, #2e7d5e 60%, #3c8f6c);
+      color: #f4fbf7;
+      display: flex;
+      align-items: center;
+      font-size: 13.5px;
+      letter-spacing: 0.02em;
+      padding: 0 24px;
+      justify-content: center;
+      gap: 10px;
+    }
+    .announce-bar .dot {
+      width: 7px; height: 7px; border-radius: 50%;
+      background: #f2c94c;
+      box-shadow: 0 0 0 3px rgba(242,201,76,0.25);
+      flex-shrink: 0;
+    }
+    .announce-bar strong { color: #ffe9a8; font-weight: 600; }
+
+    .site-header {
+      position: sticky;
+      top: var(--announce-h);
+      z-index: 50;
+      background: rgba(255,255,255,0.94);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line);
+      box-shadow: 0 4px 16px rgba(27,42,36,0.05);
+    }
+    .header-inner {
+      max-width: 1360px;
+      margin: 0 auto;
+      padding: 12px 28px;
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-shrink: 0;
+    }
+    .brand-mark {
+      width: 46px; height: 46px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #1f5f4a, #3c8f6c);
+      display: grid;
+      place-items: center;
+      box-shadow: 0 4px 12px rgba(31,95,74,0.28);
+    }
+    .brand-text {
+      font-size: 19px;
+      font-weight: 800;
+      letter-spacing: 0.01em;
+      color: var(--green-deep);
+      line-height: 1.25;
+      max-width: 240px;
+    }
+    .header-nav {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex: 1;
+      flex-wrap: wrap;
+    }
+    .header-nav a {
+      padding: 7px 13px;
+      border-radius: 999px;
+      font-size: 14px;
+      color: var(--ink-soft);
+      font-weight: 500;
+      transition: background .18s, color .18s;
+    }
+    .header-nav a:hover, .header-nav a:focus-visible {
+      background: var(--green-soft);
+      color: var(--green-deep);
+      outline: none;
+    }
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+    .search-mini {
+      display: flex;
+      align-items: center;
+      background: var(--bg);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 4px 6px 4px 12px;
+      gap: 6px;
+    }
+    .search-mini input {
+      border: 0;
+      background: transparent;
+      font-family: inherit;
+      font-size: 13.5px;
+      width: 140px;
+      color: var(--ink);
+      outline: none;
+    }
+    .search-mini button {
+      border: 0;
+      background: var(--green-deep);
+      color: #fff;
+      border-radius: 999px;
+      padding: 5px 13px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .btn-ghost {
+      border: 1px solid var(--line);
+      background: #fff;
+      border-radius: 999px;
+      padding: 7px 15px;
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--green-deep);
+    }
+
+    /* 首屏 */
+    .hero {
+      background:
+        radial-gradient(1100px 380px at 85% -20%, rgba(242,201,76,0.20), transparent 65%),
+        linear-gradient(160deg, #eef7f2 0%, #f6f9f7 55%, #fbf6e9 100%);
+      border-bottom: 1px solid var(--line);
+      padding: 44px 28px 48px;
+    }
+    .hero-inner {
+      max-width: 1360px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 48px;
+      align-items: center;
+    }
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 5px 14px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--green-deep);
+      margin-bottom: 18px;
+      box-shadow: var(--shadow-sm);
+    }
+    .hero-eyebrow .pip {
+      width: 7px; height: 7px; border-radius: 50%; background: var(--gold);
+    }
+    h1 {
+      font-size: 38px;
+      line-height: 1.25;
+      font-weight: 800;
+      letter-spacing: -0.01em;
+      color: var(--green-deep);
+      margin-bottom: 16px;
+    }
+    .hero-lead {
+      font-size: 16px;
+      color: var(--ink-soft);
+      max-width: 560px;
+      margin-bottom: 22px;
+    }
+    .hero-points {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 22px;
+      margin-bottom: 26px;
+      font-size: 14px;
+      color: var(--ink-soft);
+    }
+    .hero-points span {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+    }
+    .hero-points span::before {
+      content: "";
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--green-mid);
+    }
+    .hero-cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+    .btn-primary {
+      background: var(--green-deep);
+      color: #fff;
+      border: 0;
+      border-radius: 999px;
+      padding: 11px 24px;
+      font-size: 15px;
+      font-weight: 700;
+      box-shadow: 0 6px 16px rgba(31,95,74,0.25);
+      transition: transform .15s;
+    }
+    .btn-primary:hover { transform: translateY(-1px); }
+    .btn-secondary {
+      background: #fff;
+      border: 1px solid var(--line);
+      color: var(--green-deep);
+      border-radius: 999px;
+      padding: 10px 22px;
+      font-size: 15px;
+      font-weight: 600;
+    }
+    .hero-visual {
+      position: relative;
+      min-height: 260px;
+      display: grid;
+      place-items: center;
+    }
+    .hero-visual svg { width: 100%; height: auto; max-width: 420px; }
+
+    /* 主容器三栏 */
+    .page-wrap {
+      max-width: 1360px;
+      margin: 0 auto;
+      padding: 34px 28px 60px;
+      display: grid;
+      grid-template-columns: 180px minmax(0, 1fr) 248px;
+      gap: 30px;
+      align-items: start;
+    }
+
+    /* 左栏 */
+    .left-col {
+      position: sticky;
+      top: calc(var(--sticky-offset) + 12px);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .side-block {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      padding: 15px 14px;
+      box-shadow: var(--shadow-sm);
+    }
+    .side-title {
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+      text-transform: uppercase;
+      margin-bottom: 11px;
+    }
+    .channel-list { display: flex; flex-direction: column; gap: 2px; }
+    .channel-list a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 9px;
+      border-radius: 8px;
+      font-size: 14px;
+      color: var(--ink-soft);
+      font-weight: 500;
+      transition: background .15s, color .15s;
+    }
+    .channel-list a:hover, .channel-list a:focus-visible {
+      background: var(--green-soft);
+      color: var(--green-deep);
+      outline: none;
+    }
+    .channel-list a .c-dot {
+      width: 6px; height: 6px; border-radius: 50%;
+      background: var(--green-mid);
+      flex-shrink: 0;
+      opacity: 0.65;
+    }
+    .tag-cloud { display: flex; flex-wrap: wrap; gap: 6px; }
+    .tag-cloud a {
+      font-size: 12.5px;
+      padding: 4px 9px;
+      border-radius: 999px;
+      background: var(--green-soft);
+      color: var(--green-deep);
+      font-weight: 500;
+      transition: background .15s;
+    }
+    .tag-cloud a:hover { background: #d5e9df; }
+
+    /* 中栏 */
+    .main-col { min-width: 0; display: flex; flex-direction: column; gap: 30px; }
+    .board {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 26px 26px 28px;
+      box-shadow: var(--shadow-sm);
+    }
+    .board-h2 {
+      font-size: 21px;
+      font-weight: 800;
+      color: var(--green-deep);
+      margin-bottom: 6px;
+      letter-spacing: -0.005em;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .board-h2 .h2-accent {
+      width: 4px;
+      height: 20px;
+      border-radius: 4px;
+      background: var(--gold);
+      flex-shrink: 0;
+    }
+    .board-sub {
+      font-size: 13.5px;
+      color: var(--muted);
+      margin-bottom: 18px;
+      padding-left: 14px;
+    }
+    .prose p { margin-bottom: 12px; color: var(--ink-soft); font-size: 14.5px; }
+    .prose h3 {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--green-deep);
+      margin: 22px 0 9px;
+    }
+    .prose ul { margin: 6px 0 14px 20px; color: var(--ink-soft); font-size: 14.5px; }
+    .prose li { margin-bottom: 6px; }
+
+    /* 卡片网格 */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+    .content-card {
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      padding: 15px 16px;
+      background: #fcfefd;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      transition: border-color .15s, box-shadow .15s;
+    }
+    .content-card:hover {
+      border-color: #bcd6ca;
+      box-shadow: 0 6px 16px rgba(31,95,74,0.08);
+    }
+    .card-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .card-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--ink);
+      line-height: 1.45;
+    }
+    .card-badge {
+      font-size: 11.5px;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: var(--gold-soft);
+      color: #8a6510;
+      font-weight: 600;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .card-desc {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+    .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-top: 2px;
+    }
+    .card-tags span {
+      font-size: 11.5px;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: var(--green-soft);
+      color: var(--green-deep);
+    }
+    .card-meta {
+      display: flex;
+      gap: 14px;
+      font-size: 12px;
+      color: #93a59c;
+      padding-top: 3px;
+      border-top: 1px dashed #e3ece7;
+      margin-top: 2px;
+    }
+
+    /* 更新列表 */
+    .update-list { display: flex; flex-direction: column; }
+    .update-item {
+      display: flex;
+      gap: 12px;
+      align-items: baseline;
+      padding: 10px 0;
+      border-bottom: 1px dashed #e3ece7;
+      font-size: 14px;
+    }
+    .update-item:last-child { border-bottom: 0; }
+    .update-idx {
+      font-weight: 800;
+      font-size: 13px;
+      color: var(--green-mid);
+      width: 22px;
+      flex-shrink: 0;
+    }
+    .update-name { font-weight: 600; color: var(--ink); white-space: nowrap; }
+    .update-summary { color: var(--muted); font-size: 13px; }
+
+    /* 分类入口 */
+    .cat-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+    .cat-item {
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      padding: 13px 12px;
+      background: #fcfefd;
+      text-align: center;
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--green-deep);
+      transition: background .15s, border-color .15s;
+    }
+    .cat-item:hover { background: var(--green-soft); border-color: #bcd6ca; }
+    .cat-item small {
+      display: block;
+      font-size: 11.5px;
+      color: var(--muted);
+      font-weight: 400;
+      margin-top: 3px;
+    }
+
+    /* 深度解析 */
+    .deep-panel {
+      background: linear-gradient(180deg, #fcfefd, #f9fcfa);
+      border-left: 3px solid var(--gold);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 18px 20px;
+      margin: 16px 0;
+    }
+    .deep-panel h3 { margin-top: 0; }
+
+    /* 对照面板 */
+    .compare-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin: 16px 0;
+    }
+    .compare-card {
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      padding: 16px;
+      background: #fff;
+    }
+    .compare-card h3 {
+      font-size: 15px;
+      margin: 0 0 8px;
+      color: var(--green-deep);
+    }
+    .compare-card ul { margin: 0 0 0 18px; font-size: 13.5px; color: var(--ink-soft); }
+    .compare-card li { margin-bottom: 5px; }
+
+    /* FAQ */
+    .faq-list { display: flex; flex-direction: column; gap: 8px; }
+    details {
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      padding: 0;
+      background: #fcfefd;
+      overflow: hidden;
+    }
+    details[open] { border-color: #bcd6ca; background: #fff; }
+    summary {
+      padding: 13px 16px;
+      font-weight: 600;
+      font-size: 14.5px;
+      color: var(--green-deep);
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after {
+      content: "+";
+      font-size: 18px;
+      color: var(--gold);
+      font-weight: 700;
+      transition: transform .2s;
+    }
+    details[open] summary::after { content: "−"; }
+    details p {
+      padding: 0 16px 15px;
+      font-size: 13.5px;
+      color: var(--ink-soft);
+      line-height: 1.7;
+    }
+
+    /* 评论 */
+    .comment-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 11px;
+    }
+    .comment-item {
+      background: #fcfefd;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      padding: 12px 14px;
+    }
+    .comment-head {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 6px;
+    }
+    .avatar {
+      width: 26px; height: 26px;
+      border-radius: 50%;
+      background: var(--green-soft);
+      color: var(--green-deep);
+      font-size: 12px;
+      font-weight: 700;
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+    }
+    .comment-name { font-size: 13px; font-weight: 600; color: var(--ink); }
+    .comment-text { font-size: 13px; color: var(--ink-soft); line-height: 1.65; }
+
+    /* 资讯 */
+    .news-list { display: flex; flex-direction: column; gap: 12px; }
+    .news-item {
+      display: flex;
+      gap: 14px;
+      padding-bottom: 12px;
+      border-bottom: 1px dashed #e3ece7;
+    }
+    .news-item:last-child { border-bottom: 0; padding-bottom: 0; }
+    .news-date {
+      font-size: 12px;
+      color: #93a59c;
+      white-space: nowrap;
+      flex-shrink: 0;
+      padding-top: 2px;
+      font-variant-numeric: tabular-nums;
+    }
+    .news-title { font-size: 14px; font-weight: 600; margin-bottom: 3px; }
+    .news-desc { font-size: 12.5px; color: var(--muted); }
+
+    /* 相关推荐标签 */
+    .rec-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .rec-tags a {
+      font-size: 13px;
+      padding: 6px 13px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--ink-soft);
+      font-weight: 500;
+      transition: border-color .15s, color .15s;
+    }
+    .rec-tags a:hover {
+      border-color: var(--green-mid);
+      color: var(--green-deep);
+      background: var(--green-soft);
+    }
+
+    /* 右栏 */
+    .right-col {
+      position: sticky;
+      top: calc(var(--sticky-offset) + 12px);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .toc-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .toc-list a {
+      font-size: 13px;
+      padding: 5px 8px;
+      border-radius: 6px;
+      color: var(--ink-soft);
+      border-left: 2px solid transparent;
+      transition: background .15s, color .15s, border-color .15s;
+    }
+    .toc-list a:hover {
+      background: var(--green-soft);
+      color: var(--green-deep);
+      border-left-color: var(--gold);
+    }
+    .hot-list { display: flex; flex-direction: column; gap: 9px; }
+    .hot-item {
+      display: flex;
+      gap: 8px;
+      align-items: baseline;
+      font-size: 13px;
+      color: var(--ink-soft);
+    }
+    .hot-rank {
+      font-weight: 800;
+      font-size: 12px;
+      color: var(--gold);
+      width: 16px;
+      flex-shrink: 0;
+    }
+    .ext-links { display: flex; flex-direction: column; gap: 7px; }
+    .ext-links a {
+      font-size: 13px;
+      color: var(--green-deep);
+      font-weight: 500;
+      padding: 5px 0;
+      border-bottom: 1px dashed #e3ece7;
+    }
+    .ext-links a:last-child { border-bottom: 0; }
+
+    /* 页尾 */
+    .site-footer {
+      background: #12241d;
+      color: #c8d8d0;
+      padding: 44px 28px 26px;
+      margin-top: 20px;
+    }
+    .footer-inner {
+      max-width: 1360px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr 1fr;
+      gap: 36px;
+    }
+    .footer-brand .fb-mark {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .footer-brand .fb-mark svg { width: 34px; height: 34px; }
+    .footer-brand .fb-name {
+      font-size: 16px;
+      font-weight: 800;
+      color: #fff;
+    }
+    .footer-brand p {
+      font-size: 12.5px;
+      line-height: 1.7;
+      color: #93a59c;
+      max-width: 280px;
+    }
+    .footer-col h4 {
+      font-size: 13px;
+      color: #e6efe9;
+      font-weight: 700;
+      margin-bottom: 12px;
+      letter-spacing: 0.03em;
+    }
+    .footer-col a {
+      display: block;
+      font-size: 12.5px;
+      color: #93a59c;
+      padding: 4px 0;
+      transition: color .15s;
+    }
+    .footer-col a:hover { color: #f2c94c; }
+    .footer-bottom {
+      max-width: 1360px;
+      margin: 32px auto 0;
+      padding-top: 18px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      font-size: 12px;
+      color: #6b7f76;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    /* 搜索无结果提示 */
+    .no-result-tip {
+      display: none;
+      font-size: 13px;
+      color: #b25b2e;
+      background: #fdf1e9;
+      border: 1px solid #f2d0bb;
+      border-radius: 8px;
+      padding: 8px 12px;
+      margin-top: 10px;
+    }
+
+    /* 响应式 */
+    @media (max-width: 1080px) {
+      .page-wrap { grid-template-columns: 170px minmax(0, 1fr); }
+      .right-col { display: none; }
+      .hero-inner { grid-template-columns: 1fr; gap: 30px; }
+      .hero-visual { order: -1; min-height: 180px; }
+      .hero-visual svg { max-width: 320px; }
+    }
+    @media (max-width: 840px) {
+      .page-wrap { grid-template-columns: 1fr; }
+      .left-col {
+        position: static;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+      .left-col .side-block { flex: 1 1 200px; }
+      .header-inner { flex-wrap: wrap; gap: 12px; }
+      .header-nav { order: 3; width: 100%; overflow-x: auto; flex-wrap: nowrap; padding-bottom: 2px; }
+      .header-nav a { white-space: nowrap; }
+      h1 { font-size: 30px; }
+      .card-grid { grid-template-columns: 1fr; }
+      .cat-grid { grid-template-columns: repeat(2, 1fr); }
+      .comment-grid { grid-template-columns: 1fr; }
+      .compare-grid { grid-template-columns: 1fr; }
+      .footer-inner { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 520px) {
+      .hero { padding: 30px 16px 34px; }
+      .page-wrap { padding: 22px 16px 46px; }
+      h1 { font-size: 25px; }
+      .board { padding: 20px 17px 22px; }
+      .header-inner { padding: 10px 16px; }
+      .announce-bar { padding: 0 14px; font-size: 12px; }
+      .search-mini input { width: 96px; }
+      .footer-inner { grid-template-columns: 1fr; }
+    }
+    :focus-visible {
+      outline: 2px solid var(--gold);
+      outline-offset: 2px;
+    }
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      top: 0;
+      background: var(--green-deep);
+      color: #fff;
+      padding: 8px 16px;
+      z-index: 100;
+      border-radius: 0 0 8px 0;
+    }
+    .skip-link:focus { left: 0; }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">跳到主要内容</a>
+
+  <!-- 吸顶公告条 -->
+  <div class="announce-bar" role="region" aria-label="站点公告">
+    <span class="dot" aria-hidden="true"></span>
+    <span><strong>骑乘主题大赛</strong> 本周赛程与作品更新中 · 每日大赛骑乘专题看点汇总</span>
+  </div>
+
+  <!-- 吸顶页头 -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="/#hero" aria-label="每日大赛主题大赛骑乘首页">
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 100 100" fill="none">
+            <path d="M18 72 Q32 24 50 72 Q68 24 82 72" stroke="#f2c94c" stroke-width="9" stroke-linecap="round"/>
+            <circle cx="50" cy="30" r="7" fill="#ffe9a8"/>
+          </svg>
+        </span>
+        <span class="brand-text">每日大赛主题大赛骑乘</span>
+      </a>
+      <nav class="header-nav" aria-label="主题导航">
+        <a href="/#intro">内容简介</a>
+        <a href="/#hot">热门骑乘</a>
+        <a href="/#latest">每日更新</a>
+        <a href="/#cats">分类入口</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#faq">常见问答</a>
+        <a href="/#comments">用户评论</a>
+      </nav>
+      <div class="header-actions">
+        <div class="search-mini" role="search">
+          <input id="siteSearch" type="search" placeholder="搜索骑乘内容" aria-label="搜索骑乘内容">
+          <button id="searchBtn" type="button">查找</button>
+        </div>
+        <a class="btn-ghost" href="/#cats">分类筛选</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 首屏 -->
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <span class="hero-eyebrow"><span class="pip" aria-hidden="true"></span>骑乘主题 · 每日赛程 · 作品追踪</span>
+        <h1>每日大赛主题大赛骑乘</h1>
+        <p class="hero-lead">围绕骑乘类主题赛事的内容聚合入口，按每日赛程整理热门骑乘作品、参赛看点与分类筛选，方便快速定位想看的骑乘大赛条目。</p>
+        <div class="hero-points">
+          <span>每日大赛骑乘条目更新</span>
+          <span>骑乘主题作品分类清晰</span>
+          <span>参赛看点与对比参考</span>
+          <span>移动端随时浏览</span>
+        </div>
+        <div class="hero-cta">
+          <a class="btn-primary" href="/#hot">查看热门骑乘作品</a>
+          <a class="btn-secondary" href="/#deep">阅读深度解析</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <svg viewBox="0 0 420 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="16" y="20" width="388" height="260" rx="22" fill="#ffffff" stroke="#d7e2dc" stroke-width="1.5"/>
+          <rect x="34" y="40" width="150" height="12" rx="6" fill="#1f5f4a"/>
+          <rect x="34" y="62" width="96" height="8" rx="4" fill="#c9d8d1"/>
+          <rect x="34" y="96" width="164" height="56" rx="10" fill="#e8f3ee"/>
+          <path d="M52 138 Q68 104 84 138 Q100 104 116 138" stroke="#2e7d5e" stroke-width="5" stroke-linecap="round"/>
+          <circle cx="150" cy="124" r="9" stroke="#c99a2e" stroke-width="4" fill="none"/>
+          <rect x="34" y="166" width="120" height="9" rx="4.5" fill="#d7e2dc"/>
+          <rect x="34" y="184" width="150" height="9" rx="4.5" fill="#e3ece7"/>
+          <rect x="34" y="202" width="100" height="9" rx="4.5" fill="#e3ece7"/>
+          <rect x="222" y="96" width="164" height="72" rx="10" fill="#fbf3df"/>
+          <path d="M244 152 L262 118 L280 152 L298 118 L316 152 L334 118 L352 152" stroke="#c99a2e" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="222" y="184" width="120" height="9" rx="4.5" fill="#e3ece7"/>
+          <rect x="222" y="202" width="150" height="9" rx="4.5" fill="#e3ece7"/>
+          <rect x="222" y="220" width="90" height="9" rx="4.5" fill="#e3ece7"/>
+          <circle cx="352" cy="52" r="16" fill="#f2c94c" opacity="0.28"/>
+          <circle cx="352" cy="52" r="8" fill="#f2c94c" opacity="0.7"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- 三栏主内容区 -->
+  <div class="page-wrap">
+    <!-- 左栏 -->
+    <aside class="left-col" aria-label="频道与标签索引">
+      <div class="side-block">
+        <div class="side-title">频道导航</div>
+        <nav class="channel-list" aria-label="左栏频道">
+          <a href="/#intro"><span class="c-dot" aria-hidden="true"></span>骑乘内容简介</a>
+          <a href="/#hot"><span class="c-dot" aria-hidden="true"></span>热门骑乘作品</a>
+          <a href="/#latest"><span class="c-dot" aria-hidden="true"></span>每日大赛更新</a>
+          <a href="/#cats"><span class="c-dot" aria-hidden="true"></span>骑乘分类入口</a>
+          <a href="/#deep"><span class="c-dot" aria-hidden="true"></span>深度解析</a>
+          <a href="/#guide"><span class="c-dot" aria-hidden="true"></span>体验指南</a>
+          <a href="/#faq"><span class="c-dot" aria-hidden="true"></span>常见问答</a>
+          <a href="/#comments"><span class="c-dot" aria-hidden="true"></span>用户评论</a>
+          <a href="/#news"><span class="c-dot" aria-hidden="true"></span>相关资讯</a>
+          <a href="/#rec"><span class="c-dot" aria-hidden="true"></span>相关推荐</a>
+        </nav>
+      </div>
+      <div class="side-block">
+        <div class="side-title">骑乘标签</div>
+        <div class="tag-cloud" aria-label="骑乘相关标签">
+          <a href="/#cats">骑乘竞速</a>
+          <a href="/#cats">主题骑乘</a>
+          <a href="/#cats">每日大赛</a>
+          <a href="/#cats">骑乘技巧</a>
+          <a href="/#cats">参赛作品</a>
+          <a href="/#cats">骑乘装备</a>
+          <a href="/#cats">赛事对比</a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- 中栏主内容 -->
+    <main class="main-col" id="main-content">
+
+      <!-- 1. 内容简介 -->
+      <section class="board" id="intro">
+        <h2 class="board-h2"><span class="h2-accent" aria-hidden="true"></span>每日大赛主题大赛骑乘内容简介</h2>
+        <p class="board-sub">了解这个骑乘主题赛事内容入口适合谁看、提供哪些方向</p>
+        <div class="prose">
+          <p>每日大赛主题大赛骑乘是一个围绕骑乘类主题赛事整理内容方向的门户页面。它把每日大赛中的骑乘作品、参赛看点、分类筛选和更新节奏集中呈现，让关注骑乘主题大赛的观众不必在零散信息之间来回切换。无论你是想找某一类骑乘题材的参赛作品，还是想了解最近几天骑乘大赛的更新情况，都可以从这里的分类和推荐中找到入口。</p>
+          <p>骑乘主题大赛通常包含竞速类、技巧类、主题展示类等不同方向。页面按类型整理作品入口，并在每日更新板块标注新出现的骑乘条目。对于想比较不同骑乘作品风格的观众，深度解析和对照面板提供了从类型差异到观看场景的说明。对于参赛或关注赛程的读者，分类入口与常见问答覆盖了参赛方向、更新频率和选择依据等常见问题。</p>
+          <p>内容以骑乘主题为核心，不混入无关的泛赛事推荐。每日大赛的更新节奏决定了页面更关注近期出现的骑乘作品和赛程动态，而不是长期不变的静态榜单。阅读时可以先用分类定位感兴趣的骑乘类型，再通过热门作品卡片和最新更新列表了解具体内容，最后用常见问答补充对参赛规则和更新节奏的认识。</p>
+        </div>
+      </section>
+
+      <!-- 2. 热门内容推荐 -->
+      <section class="board" id="hot">
+        <h2 class="board-h2"><span class="h2-accent" aria-hidden="true"></span>热门骑乘作品推荐</h2>
+        <p class="board-sub">近期骑乘主题大赛中关注度较高的参赛条目与看点</p>
+        <div class="card-grid">
+          <article class="content-card">
+            <div class="card-top">
+              <h3 class="card-title">城市夜骑竞速赛 第三轮回放</h3>
+              <span class="card-badge">竞速类</span>
+            </div>
+            <p class="card-desc">夜间城市道路骑乘竞速，弯道超车与节奏控制是看点，适合喜欢速度感的观众。</p>
+            <div class="card-tags"><span>骑乘竞速</span><span>夜骑</span><span>弯道技巧</span></div>
+            <div class="card-meta"><span>热度 9.4</span><span>更新 2 小时前</span><span>评分 4.7</span></div>
+          </article>
+          <article class="content-card">
+            <div class="card-top">
+              <h3 class="card-title">山地骑乘主题展示赛 第 8 日</h3>
+              <span class="card-badge">主题类</span>
+            </div>
+            <p class="card-desc">山地地形下的骑乘路线展示，强调装备搭配与主题表达，适合看完整路线设计。</p>
+            <div class="card-tags"><span>山地骑乘</span><span>主题展示</span><span>路线设计</span></div>
+            <div class="card-meta"><span>热度 8.9</span><span>更新 5 小时前</span><span>评分 4.5</span></div>
+          </article>
+          <article class="content-card">
+            <div class="card-top">
+              <h3 class="card-title">骑乘技巧挑战 平衡控制专场</h3>
+              <span class="card-badge">技巧类</span>
+            </div>
+            <p class="card-desc">低速平衡与定点控制为主的骑乘技巧赛，适合想研究技术细节的观众反复看。</p>
+            <div class="card-tags"><span>骑乘技巧</span><span>平衡控制</span><span>定点挑战</span></div>
+            <div class="card-meta"><span>热度 8.6</span><span>更新 7 小时前</span><span>评分 4.6</span></div>
+          </article>
+          <article class="content-card">
+            <div class="card-top">
+              <h3 class="card-title">每日大赛骑乘接力赛 第 12 组</h3>
+              <span class="card-badge">团队类</span>
+            </div>
+            <p class="card-desc">多人接力的骑乘赛制，换乘衔接与团队节奏是主要看点，适合看配合细节。</p>
+            <div class="card-tags"><span>骑乘接力</span><span>团队配合</span><span>换乘衔接</span></div>
+            <div class="card-meta"><span>热度 8.7</span><span>更新 9 小时前</span><span>评分 4.4</span></div>
+          </article>
+          <article class="content-card">
+            <div class="card-top">
+              <h3 class="card-title">复古骑乘主题专场 第 4 期</h3>
+              <span class="card-badge">主题类</span>
+            </div>
+            <p class="card-desc">复古风格骑乘装备与路线展示，偏重主题氛围与细节搭配，适合慢节奏观看。</p>
+            <div class="card-tags"><span>复古骑乘</span><span>装备搭配</span><span>主题氛围</span></div>
+            <div class="card-meta"><span>热度 8.3</span><span>更新 11 小时前</span><span>评分 4.5</span></div>
+          </article>
+          <article class="content-card">
+            <div class="card-top">
+              <h3 class="card-title">骑乘大赛新手组 第 3 日精选</h3>
+              <span class="card-badge">新手组</span>
+            </div>
+            <p class="card-desc">面向新参与者的骑乘赛程精选，节奏相对友好，适合初次了解骑乘大赛的观众。</p>
+            <div class="card-tags"><span>新手骑乘</span><span>入门赛程</span><span>友好节奏</span></div>
+            <div class="card-meta"><span>热度 8.1</span><span>更新 13 小时前</span><span>评分 4.3</span></div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 3. 最新更新 -->
+      <section class="board" id="latest">
+        <h2 class="board-h2"><span class="h2-accent" aria-hidden="true"></span>每日大赛骑乘最新更新</h2>
+        <p class="board-sub">按时间整理的骑乘条目动态，快速了解近期赛程与作品变化</p>
+        <div class="update-list">
+          <div class="update-item"><span class="update-idx">01</span><span class="update-name">城市夜骑竞速赛</span><span class="update-summary">第三轮完整回放上线，新增弯道视角。</span></div>
+          <div class="update-item"><span class="update-idx">02</span><span class="update-name">山地主题展示赛</span><span class="update-summary">第 8 日路线图与装备清单同步更新。</span></div>
+          <div class="update-item"><span class="update-idx">03</span><span class="update-name">骑乘技巧挑战</span><span class="update-summary">平衡控制专场评分细则公布。</span></div>
+          <div class="update-item"><span class="update-idx">04</span><span class="update-name">接力赛第 12 组</span><span class="update-summary">换乘衔接慢镜头片段已补充。</span></div>
+          <div class="update-item"><span class="update-idx">05</span><span class="update-name">复古骑乘专场</span><span class="update-summary">第 4 期主题配色与装备细节更新。</span></div>
+          <div class="update-item"><span class="update-idx">06</span><span class="update-name">新手组第 3 日</span><span class="update-summary">新增入门骑乘路线说明与节奏提示。</span></div>
+          <div class="update-item"><span class="update-idx">07</span><span class="update-name">骑乘竞速附加赛</span><span class="update-summary">短距离冲刺组参赛名单更新。</span></div>
+          <div class="update-item"><span class="update-idx">08</span><span class="update-name">主题大赛骑乘评审</span><span class="update-summary">主题表达分项说明补充至分类页。</span></div>
+        </div>
+      </section>
+
+      <!-- 4. 分类入口 -->
+      <section class="board" id="cats">
+        <h2 class="board-h2"><span class="h2-accent" aria-hidden="true"></span>骑乘大赛分类入口</h2>
+        <p class="board-sub">按骑乘类型定位内容，每个分类对应不同的观看与选择需求</p>
+        <div class="cat-grid">
+          <a class="cat-item" href="/#hot">骑乘竞速<small>速度与路线</small></a>
+          <a class="cat-item" href="/#hot">山地骑乘<small>地形与装备</small></a>
+          <a class="cat-item" href="/#hot">骑乘技巧<small>平衡与控制</small></a>
+          <a class="cat-item" href="/#hot">团队接力<small>配合与衔接</small></a>
+          <a class="cat-item" href="/#hot">主题展示<small>风格与表达</small></a>
+          <a class="cat-item" href="/#hot">新手骑乘<small>入门与节奏</small></a>
+          <a class="cat-item" href="/#hot">复古骑乘<small>装备与氛围</small></a>
+          <a class="cat-item" href="/#hot">骑乘评审<small>评分与细则</small></a>
+        </div>
+      </section>
+
+      <!-- 5. 深度解析正文 -->
+      <section class="board" id="deep">
+        <h2 class="board-h2"><span class="h2-accent" aria-hidden="true"></span>骑乘主题大赛深度解析</h2>
+        <p class="board-sub">从类型差异、观看场景到选择依据，拆解骑乘主题大赛的常见问题</p>
+        <div class="prose">
+          <h3>骑乘主题大赛的内容类型怎么分</h3>
+          <p>骑乘主题大赛并不只有一种形态。按比赛目标划分，常见的有竞速类、技巧类、主题展示类和团队接力类。竞速类强调路线速度与超车节奏，画面变化快，适合想直接看速度和排名的观众。技巧类更关注平衡、定点与动作完成度，节奏偏慢，适合反复观看细节。主题展示类把装备、路线和氛围放在前面，适合按主题偏好挑选。</p>
+          <p>每日大赛的赛制安排让不同类别交替出现。想连续看竞速内容，可以优先关注竞速标签下的更新；想研究骑乘技术，则技巧类条目更合适。分类入口把这些方向单独列出，避免在大量条目中反复翻找。对于第一次接触骑乘主题大赛的观众，从新手组或主题展示类进入，理解门槛更低。</p>
+
+          <h3>每日大赛骑乘的更新节奏与观看安排</h3>
+          <p>每日更新的骑乘条目通常按赛程推进，同一天可能出现多个类别的片段或回放。更新列表按时间顺序排列，便于快速判断哪些条目是新的。若只想看完整路线，可以等主题展示类条目更新到阶段节点再看；若关注赛程结果，竞速类和接力类的即时更新更合适。</p>
+          <p>观看安排上，短片段适合通勤或碎片时间浏览，完整回放更适合留出整段时间。页面把热门卡片和最新更新分开呈现，前者看关注度，后者看时间顺序，两种入口对应不同的浏览习惯。对于需要对比不同骑乘作品的观众，深度解析中的对照面板提供了类型、节奏和观看门槛的并排说明，减少逐条试看的时间成本。</p>
+
+          <h3>骑乘大赛和其他主题赛事比哪个好</h3>
+          <p>比较的前提是观看目标。如果更在意速度感和即时排名，骑乘竞速类的节奏更直接；如果偏好装备、路线和主题表达，主题展示类的信息密度更高；如果想研究技术动作，技巧类的可反复观看性更强。骑乘主题大赛的特点在于把运动过程和主题表达放在同一个赛程框架里，观众可以在不同类型之间切换，而不是只锁定单一风格。</p>
+          <div class="compare-grid">
+            <div class="compare-card">
+              <h3>骑乘竞速类</h3>
+              <ul>
+                <li>节奏快，画面变化密集</li>
+                <li>适合看排名与超车</li>
+                <li>短片段即可理解</li>
+              </ul>
+            </div>
+            <div class="compare-card">
+              <h3>骑乘主题展示类</h3>
+              <ul>
+                <li>路线与装备信息更完整</li>
+                <li>适合按主题偏好挑选</li>
+                <li>完整观看体验更好</li>
+              </ul>
+            </div>
+          </div>
+
+          <h3>参赛方向与选择依据</h3>
+          <p>对准备参与骑乘主题大赛的读者，先确定方向比直接看赛程更重要。竞速方向需要路线熟悉度和节奏控制；技巧方向需要稳定的动作基础；主题展示方向更看重整体表达与装备搭配。分类入口和常见问答把这些方向拆开说明，便于按自身条件判断先从哪一类入手。</p>
+          <p>选择依据还包括观看和参与的时间成本。每日大赛的更新频率较高，持续追踪需要固定时间；若只是偶尔浏览，按热门卡片和分类入口定位即可。页面不提供报名或交易入口，所有内容为骑乘主题赛事的展示与导航，具体参与方式以实际赛程说明为准。</p>
+
+          <h3>常见误区与阅读建议</h3>
+          <ul>
+            <li>不要只看热度排序，类型是否匹配自己的观看目标更重要。</li>
+            <li>每日更新列表按时间排列，不代表质量排序，需结合分类判断。</li>
+            <li>主题展示类的节奏偏慢，不适合用竞速类的预期去比较。</li>
+            <li>比较不同骑乘作品时，先对齐类型，再看节奏和观看门槛。</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 6. 体验指南 -->
+      <section class="board" id="guide">
+        <h2 class="board-h2"><span class="h2-accent" aria-hidden="true"></span>骑乘内容体验指南</h2>
+        <p class="board-sub">如何在这个页面里定位骑乘主题大赛内容、筛选分类和延伸阅读</p>
+        <div class="prose">
+          <p>进入页面后，可以先用顶部搜索框输入骑乘类型或作品关键词，在已展示的骑乘条目中查找。搜索只针对本页可见内容，没有匹配时会给出提示。若不确定关键词，使用左栏分类或中栏分类入口更直接。每个分类对应骑乘主题大赛中的一类方向，点击后跳到对应板块。</p>
+          <p>热门推荐适合快速了解近期关注度较高的骑乘作品，每张卡片包含类型标签和简短看点。最新更新按时间排列，适合已经有关注方向的读者。深度解析和对照面板更适合需要比较类型差异的场景。移动端下左右栏会合并到主内容之后，频道导航转为横向可滑动区域，主要阅读顺序保持不变。</p>
+          <p>需要回看某个板块时，右栏的页内目录和左栏频道导航都提供定位入口。页面不提供账号收藏或订阅功能，所有导航均为页内跳转。延伸阅读区列出与骑乘主题相关的方向标签，便于从当前板块继续浏览其他内容。</p>
+        </div>
+      </section>
+
+      <!-- 7. FAQ -->
+      <section class="board" id="faq">
+        <h2 class="board-h2"><span class="h2-accent" aria-hidden="true"></span>骑乘主题大赛常见问答</h2>
+        <p class="board-sub">围绕骑乘内容选择、更新节奏和参赛方向的真实搜索问题</p>
+        <div class="faq-list">
+          <details>
+            <summary>骑乘主题大赛适合什么人看？</summary>
+            <p>适合对骑乘运动、路线展示或装备搭配感兴趣的观众。竞速类适合看速度和排名，技巧类适合研究动作细节，主题展示类适合按风格和装备偏好挑选。新手也可以从新手组或主题展示类开始。</p>
+          </details>
+          <details>
+            <summary>每日大赛骑乘一般多久更新一次？</summary>
+            <p>页面按每日赛程整理更新，通常一天内会有多个类别的条目出现，包括片段、回放和赛程说明。具体更新时间取决于赛程安排，更新列表按时间顺序展示近期变化。</p>
+          </details>
+          <details>
+            <summary>骑乘竞速类和主题展示类有什么区别？</summary>
+            <p>竞速类以速度、路线和排名为核心，画面节奏快；主题展示类更重视装备、路线设计和整体风格表达，节奏相对慢。比较时先对齐类型，再判断哪种更符合自己的观看目标。</p>
+          </details>
+          <details>
+            <summary>骑乘大赛在哪里看完整回放？</summary>
+            <p>本页为骑乘主题赛事的内容导航，热门卡片和最新更新中会标注回放或片段状态。完整回放的具体入口以实际赛程页面为准，本页不提供外部播放链接。</p>
+          </details>
+          <details>
+            <summary>参加骑乘主题大赛需要什么基础？</summary>
+            <p>不同方向要求不同。竞速方向需要路线熟悉度和节奏控制，技巧方向需要平衡与动作基础，主题展示方向更看重整体表达。建议先通过分类了解各方向内容，再判断适合哪一类。</p>
+          </details>
+          <details>
+            <summary>骑乘主题大赛和普通骑乘活动比哪个更有看点？</summary>
+            <p>主题大赛把骑乘过程放进赛程和评分框架，类型区分更清楚，适合按方向持续追踪；普通骑乘活动更偏日常记录。若想比较不同骑乘风格和参赛表达，主题大赛的信息密度更高。</p>
+          </details>
+        </div>
+      </section>
+
+      <!-- 8. 用户评论 -->
+      <section class="board" id="comments">
+        <h2 class="board-h2"><span class="h2-accent" aria-hidden="true"></span>骑乘内容用户评论</h2>
+        <p class="board-sub">来自浏览者的多样反馈，包含正面与中性评价</p>
+        <div class="comment-grid">
+          <div class="comment-item"><div class="comment-head"><span class="avatar">林</span><span class="comment-name">林间骑客</span></div><p class="comment-text">夜骑竞速第三轮的弯道视角不错，比只看终点排名更有意思。</p></div>
+          <div class="comment-item"><div class="comment-head"><span class="avatar">陈</span><span class="comment-name">陈小北</span></div><p class="comment-text">分类入口挺清楚，山地和竞速分开找，不用一个个翻。</p></div>
+          <div class="comment-item"><div class="comment-head"><span class="avatar">阿</span><span class="comment-name">阿岚</span></div><p class="comment-text">技巧挑战的节奏偏慢，但我正好喜欢反复看平衡控制的细节。</p></div>
+          <div class="comment-item"><div class="comment-head"><span class="avatar">周</span><span class="comment-name">周未眠</span></div><p class="comment-text">每日更新列表时间顺序明确，适合我这种只想看新内容的人。</p></div>
+          <div class="comment-item"><div class="comment-head"><span class="avatar">许</span><span class="comment-name">许一程</span></div><p class="comment-text">复古主题那期的装备搭配展示比预期完整，配色也舒服。</p></div>
+          <div class="comment-item"><div class="comment-head"><span class="avatar">唐</span><span class="comment-name">唐小满</span></div><p class="comment-text">新手组对第一次看骑乘大赛的人友好，节奏不会太赶。</p></div>
+          <div class="comment-item"><div class="comment-head"><span class="avatar">何</span><span class="comment-name">何路</span></div><p class="comment-text">对比面板写得直接，竞速和主题展示的区别一眼能看懂。</p></div>
+          <div class="comment-item"><div class="comment-head"><span class="avatar">苏</span><span class="comment-name">苏格</span></div><p class="comment-text">整体信息密度偏高，第一次看需要一点时间适应分类结构。</p></div>
+          <div class="comment-item"><div class="comment-head"><span class="avatar">方</span><span class="comment-name">方野</span></div><p class="comment-text">接力赛的换乘衔接慢镜头很有用，团队配合部分讲得清楚。</p></div>
+          <div class="comment-item"><div class="comment-head"><span class="avatar">白</span><span class="comment-name">白昼</span></div><p class="comment-text">希望以后能看到更多骑乘技巧类的评分细则说明。</p></div>
+          <div class="comment-item"><div class="comment-head"><span class="avatar">顾</span><span class="comment-name">顾远</span></div><p class="comment-text">搜索框能直接筛页面里的骑乘条目，比预想中方便。</p></div>
+          <div class="comment-item"><div class="comment-head"><span class="avatar">沈</span><span class="comment-name">沈青</span></div><p class="comment-text">主题展示类的路线图更新及时，装备清单也一起补了。</p></div>
+          <div class="comment-item"><div class="comment-head"><span class="avatar">韩</span><span class="comment-name">韩树</span></div><p class="comment-text">部分条目只有片段，想看完整回放还得等赛程推进。</p></div>
+          <div class="comment-item"><div class="comment-head"><span class="avatar">叶</span><span class="comment-name">叶行</span></div><p class="comment-text">左栏频道导航在手机上变成横向滑动，找板块还算顺手。</p></div>
+        </div>
+      </section>
+
+      <!-- 9. 相关资讯 -->
+      <section class="board" id="news">
+        <h2 class="board-h2"><span class="h2-accent" aria-hidden="true"></span>骑乘主题相关资讯</h2>
+        <p class="board-sub">近期骑乘大赛赛程与内容方向的变化摘要</p>
+        <div class="news-list">
+          <div class="news-item">
+            <span class="news-date">2025-03-18</span>
+            <div><div class="news-title">骑乘竞速附加赛新增短距离冲刺组</div><p class="news-desc">赛程在原有路线基础上增加短距离组别，更新列表已同步参赛名单变化。</p></div>
+          </div>
+          <div class="news-item">
+            <span class="news-date">2025-03-16</span>
+            <div><div class="news-title">山地主题展示赛路线图更新至第 8 日</div><p class="news-desc">路线节点和装备清单一起更新，主题展示类条目的信息完整度提高。</p></div>
+          </div>
+          <div class="news-item">
+            <span class="news-date">2025-03-14</span>
+            <div><div class="news-title">骑乘技巧挑战公布平衡控制评分细则</div><p class="news-desc">评分分项在分类页补充说明，方便对比不同参赛条目的完成度。</p></div>
+          </div>
+          <div class="news-item">
+            <span class="news-date">2025-03-11</span>
+            <div><div class="news-title">接力赛换乘衔接慢镜头片段补充上线</div><p class="news-desc">第 12 组新增多角度片段，团队配合细节更易观察。</p></div>
+          </div>
+          <div class="news-item">
+            <span class="news-date">2025-03-08</span>
+            <div><div class="news-title">复古骑乘主题专场调整配色与装备展示</div><p class="news-desc">第 4 期在原有主题基础上补充装备细节，整体氛围保持一致。</p></div>
+          </div>
+          <div class="news-item">
+            <span class="news-date">2025-03-05</span>
+            <div><div class="news-title">新手组增加入门骑乘路线说明</div><p class="news-desc">面向初次观看的读者补充路线和节奏提示，降低理解门槛。</p></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10. 相关推荐 -->
+      <section class="board" id="rec">
+        <h2 class="board-h2"><span class="h2-accent" aria-hidden="true"></span>骑乘方向相关推荐</h2>
+        <p class="board-sub">按可搜索的骑乘内容方向继续浏览</p>
+        <div class="rec-tags">
+          <a href="/#hot">骑乘竞速短距离冲刺</a>
+          <a href="/#hot">山地骑乘路线设计</a>
+          <a href="/#hot">骑乘平衡控制技巧</a>
+          <a href="/#hot">骑乘接力团队配合</a>
+          <a href="/#hot">复古骑乘装备搭配</a>
+          <a href="/#hot">新手骑乘入门路线</a>
+          <a href="/#hot">骑乘主题展示评分</a>
+          <a href="/#hot">每日大赛骑乘回放</a>
+        </div>
+      </section>
+
+      <!-- 11. 精选趋势观察 -->
+      <section class="board" id="trend">
+        <h2 class="board-h2"><span class="h2-accent" aria-hidden="true"></span>骑乘主题趋势观察</h2>
+        <p class="board-sub">从近期条目看骑乘大赛的内容走向</p>
+        <div class="prose">
+          <p>近期骑乘主题大赛的条目中，竞速类和主题展示类的更新频率相对更高。竞速类偏向短片段和即时结果，主题展示类偏向路线与装备的完整说明。两类内容的观看场景不同，也影响更新节奏：前者适合碎片时间快速浏览，后者适合留出连续时间观看。</p>
+          <p>技巧类和接力类在技术细节上的补充更明显，慢镜头和多角度片段的出现频率上升。对于关注骑乘技术的观众，这类更新比单纯的排名变化更有参考价值。新手组的内容也在调整，路线说明和节奏提示的增加让初次观看更容易跟上。</p>
+          <p>整体来看，骑乘主题大赛的内容正在从单一竞速展示，扩展到主题表达、技术拆解和团队配合的多方向并行。分类入口和更新列表的结构也围绕这一变化调整，让不同观看需求的读者能更快定位到对应类型。</p>
+        </div>
+      </section>
+
+      <!-- 12. 创作者证言 -->
+      <section class="board" id="voices">
+        <h2 class="board-h2"><span class="h2-accent" aria-hidden="true"></span>骑乘创作者与参与者证言</h2>
+        <p class="board-sub">来自参与方向的简短经验分享</p>
+        <div class="prose">
+          <p>“我们做山地主题展示时，最花时间的是路线和装备的匹配。观众看到的片段不长，但前期准备决定了主题表达是否完整。”——山地展示方向参与者</p>
+          <p>“竞速类的节奏很快，剪辑和回放视角会直接影响观众理解。把弯道和冲刺拆开看，比只给一个最终排名更清楚。”——竞速方向创作者</p>
+          <p>“技巧类适合反复看，所以我们会在动作节点上多留一点停顿。观众不一定一次看完，但回看时能抓到细节。”——技巧方向参与者</p>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- 右栏 -->
+    <aside class="right-col" aria-label="辅助阅读">
+      <div class="side-block">
+        <div class="side-title">页内目录</div>
+        <nav class="toc-list" aria-label="页内目录">
+          <a href="/#intro">内容简介</a>
+          <a href="/#hot">热门骑乘作品</a>
+          <a href="/#latest">最新更新</a>
+          <a href="/#cats">分类入口</a>
+          <a href="/#deep">深度解析</a>
+          <a href="/#guide">体验指南</a>
+          <a href="/#faq">常见问答</a>
+          <a href="/#comments">用户评论</a>
+          <a href="/#news">相关资讯</a>
+          <a href="/#rec">相关推荐</a>
+        </nav>
+      </div>
+      <div class="side-block">
+        <div class="side-title">热门骑乘条目</div>
+        <div class="hot-list">
+          <div class="hot-item"><span class="hot-rank">01</span>城市夜骑竞速赛 第三轮</div>
+          <div class="hot-item"><span class="hot-rank">02</span>骑乘接力赛 第 12 组</div>
+          <div class="hot-item"><span class="hot-rank">03</span>山地主题展示赛 第 8 日</div>
+          <div class="hot-item"><span class="hot-rank">04</span>骑乘技巧平衡控制专场</div>
+          <div class="hot-item"><span class="hot-rank">05</span>复古骑乘主题专场 第 4 期</div>
+        </div>
+      </div>
+      <div class="side-block">
+        <div class="side-title">延伸阅读</div>
+        <div class="ext-links">
+          <a href="/#deep">骑乘竞速与主题展示对比</a>
+          <a href="/#guide">骑乘分类筛选方法</a>
+          <a href="/#faq">骑乘大赛参赛方向问答</a>
+          <a href="/#trend">近期骑乘内容趋势</a>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <!-- 页尾 -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="fb-mark">
+          <svg viewBox="0 0 100 100" fill="none" aria-hidden="true">
+            <rect width="100" height="100" rx="20" fill="#2e7d5e"/>
+            <path d="M20 70 Q35 25 50 70 Q65 25 80 70" stroke="#f2c94c" stroke-width="8" fill="none" stroke-linecap="round"/>
+          </svg>
+          <span class="fb-name">每日大赛主题大赛骑乘</span>
+        </div>
+        <p>聚焦骑乘类主题赛事的内容导航，整理每日大赛骑乘条目、分类入口与观看参考。</p>
+      </div>
+      <div class="footer-col">
+        <h4>内容方向</h4>
+        <a href="/#hot">骑乘竞速</a>
+        <a href="/#hot">山地骑乘</a>
+        <a href="/#hot">骑乘技巧</a>
+        <a href="/#hot">团队接力</a>
+      </div>
+      <div class="footer-col">
+        <h4>浏览入口</h4>
+        <a href="/#cats">分类入口</a>
+        <a href="/#latest">每日更新</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#faq">常见问答</a>
+      </div>
+      <div class="footer-col">
+        <h4>关于页面</h4>
+        <a href="/#intro">内容简介</a>
+        <a href="/#guide">体验指南</a>
+        <a href="/#comments">用户评论</a>
+        <a href="/#trend">趋势观察</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 每日大赛主题大赛骑乘 · 骑乘主题内容展示</span>
+      <span>部分内容为示例数据，仅用于展示页面结构</span>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var input = document.getElementById('siteSearch');
+      var btn = document.getElementById('searchBtn');
+      var tip = document.createElement('div');
+      tip.className = 'no-result-tip';
+      tip.textContent = '没有找到匹配的骑乘内容，试试“竞速”“山地”或“技巧”等关键词。';
+      var searchWrap = input ? input.closest('.search-mini') : null;
+      if (searchWrap && searchWrap.parentNode) {
+        searchWrap.parentNode.insertBefore(tip, searchWrap.nextSibling);
+      }
+
+      function clearHighlight() {
+        document.querySelectorAll('.content-card, .update-item').forEach(function (el) {
+          el.style.outline = '';
+          el.style.outlineOffset = '';
+        });
+      }
+
+      function filterContent(kw) {
+        clearHighlight();
+        var key = kw.trim().toLowerCase();
+        if (!key) { tip.style.display = 'none'; return; }
+        var cards = document.querySelectorAll('.content-card');
+        var updates = document.querySelectorAll('.update-item');
+        var found = 0;
+        cards.forEach(function (card) {
+          var text = card.textContent.toLowerCase();
+          if (text.indexOf(key) !== -1) {
+            card.style.outline = '2px solid #c99a2e';
+            card.style.outlineOffset = '2px';
+            found++;
+          }
+        });
+        updates.forEach(function (item) {
+          var text = item.textContent.toLowerCase();
+          if (text.indexOf(key) !== -1) {
+            item.style.outline = '2px solid #c99a2e';
+            item.style.outlineOffset = '2px';
+            found++;
+          }
+        });
+        tip.style.display = found === 0 ? 'block' : 'none';
+      }
+
+      if (btn) btn.addEventListener('click', function () { filterContent(input.value); });
+      if (input) {
+        input.addEventListener('keydown', function (e) {
+          if (e.key === 'Enter') { e.preventDefault(); filterContent(input.value); }
+        });
+        input.addEventListener('input', function () {
+          if (!input.value.trim()) { clearHighlight(); tip.style.display = 'none'; }
+        });
+      }
+    })();
+  </script>
+</body>
+  </html>
